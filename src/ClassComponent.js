@@ -11,11 +11,12 @@ class ClassComponent extends Component {
     }
 
     render() {
-       
-
         return <>
-        <h1>Welcome to class Components {this.state.count}</h1>
-
+        <h1>Class Component</h1>
+        <p> Count is: {this.state.count}</p>
+        <p><button onClick={()=> {this.setState({ 
+            count: this.state.count + 1 
+            })}}>Add one</button></p>
         </>
     }
 }
