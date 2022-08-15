@@ -10,13 +10,13 @@ function Pizzas() {
         return (
             <>
             <h2>Your pizza has: </h2>
-            <p>{pizza.toppings.map(topping => (
+            {pizza.toppings.map(topping => (
                 <div key={topping}>{topping}</div>
-            ))}</p>
+            ))}
 
-            <button onClick={() => dispatch(addTopping('pineapple'))}>Add Pineapple</button><br />
-            <button onClick={() => dispatch(addTopping('tomatoes'))}>Add Tomatoes</button><br />
-            <button onClick={() => dispatch(addTopping('mushroom'))}>Add Mushrooms</button><br />
+            <button onClick={() => dispatch(addTopping('pineapple'))}>Add Pineapple</button> 
+            <button onClick={() => dispatch(addTopping('tomatoes'))}>Add Tomatoes</button> 
+            <button onClick={() => dispatch(addTopping('mushroom'))}>Add Mushrooms</button>
             </>
         )
 }
